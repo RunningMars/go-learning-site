@@ -3,7 +3,7 @@ package controllers
 import (
 	"database/sql"
 	"github.com/gin-gonic/gin"
-	"go-learning-backend/models"
+	"go-learning-site/backend/models"
 	"net/http"
 	"strconv"
 )

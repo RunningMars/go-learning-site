@@ -2,8 +2,9 @@ package routes
 
 import (
 	"database/sql"
+
+	"github.com/RunningMars/go-learning-site/backend/controllers"
 	"github.com/gin-gonic/gin"
-	"go-learning-backend/controllers"
 )
 
 func SetupRoutes(r *gin.Engine, db *sql.DB) {

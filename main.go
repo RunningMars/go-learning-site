@@ -3,14 +3,15 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"go-learning-backend/routes"
 	"log"
 	"os"
 
+	"github.com/RunningMars/go-learning-site/backend/routes"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -59,7 +60,7 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
-	
+
 	log.Printf("Server started at :%s", port)
 	r.Run(":" + port)
 }
